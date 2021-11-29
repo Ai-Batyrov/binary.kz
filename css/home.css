@@ -1,0 +1,83 @@
+body {
+  width: 99%;
+  background: linear-gradient(105.7deg, #4776E6 0.3%, #8E54E9 76.59%);
+  margin: 0px 10px 0px 10px;
+  height: 3600px;
+}
+.centering {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0px 0px 10px;
+  width: 98%;
+}
+header .logo {
+  font-family: Outfit;
+  font-weight: bold;
+  font-size: 36px;
+}
+header .logo a {
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+header .menu {
+  width: 900px;
+}
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  font-family: Montserrat;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+header ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+header #user {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header #user img {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+#page-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 30px 0px 30px;
+  height: calc(100vh - 50px);
+}
+#page-1 #left-side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 700px;
+}
+#page-1 #left-side h1 {
+  font: bold 44px 'Montserrat';
+  text-align: center;
+  color: #00FF29;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#page-1 #left-side button {
+  background-color: #F8F8F8;
+  width: 240px;
+  height: 60px;
+  font: bold 28px 'Montserrat' !important;
+  color: #004DC1;
+}

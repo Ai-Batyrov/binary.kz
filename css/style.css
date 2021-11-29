@@ -1,6 +1,8 @@
 body {
   width: 99%;
   background: linear-gradient(105.7deg, #4776E6 0.3%, #8E54E9 76.59%);
+  margin: 0px 10px 0px 10px;
+  height: 3600px;
 }
 .centering {
   display: flex;
@@ -11,9 +13,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 15px 0px 0px 10px;
   width: 98%;
-  background: linear-gradient(105.7deg, #4776E6 0.3%, #8E54E9 76.59%);
-  padding: 0px 10px 0px 10px;
 }
 header .logo {
   font-family: Outfit;
@@ -23,6 +24,7 @@ header .logo {
 header .logo a {
   text-decoration: none;
   color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 header .menu {
   width: 900px;
@@ -41,10 +43,14 @@ header ul li a {
   text-decoration: none;
   color: #fff;
   font-size: 18px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 header #user {
   width: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+header #user img {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }

@@ -1,6 +1,8 @@
 body {
     width: 99%;
     background: @background-gradient;
+    margin: 0px 10px 0px 10px;
+    height: 3600px;
 }
 
 .centering {
@@ -13,12 +15,13 @@ body {
     linear-gradient(105.7deg, #4776E6 0.3%, #8E54E9 76.59%);
 
 @text-color: #fff;
+@text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+@box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 header {
     .centering();
+    padding: 15px 0px 0px 10px;
     width: 98%;
-    background: @background-gradient;
-    padding: 0px 10px 0px 10px;
 
     .logo {
         font-family: Outfit;
@@ -27,6 +30,7 @@ header {
         a {
             text-decoration: none;
             color: @text-color;
+            text-shadow: @text-shadow;
         }
     }
 
@@ -46,11 +50,16 @@ header {
             text-decoration: none;
             color: @text-color;
             font-size: 18px;
+            text-shadow: @text-shadow;
         }
     }
 
     #user {
         width: 100px;
         .centering();
+
+        img {
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
     }
 }
