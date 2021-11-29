@@ -1,9 +1,56 @@
 body {
     width: 99%;
+    background: @background-gradient;
 }
 
 .centering {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+@background-gradient: 
+    linear-gradient(105.7deg, #4776E6 0.3%, #8E54E9 76.59%);
+
+@text-color: #fff;
+
+header {
+    .centering();
+    width: 98%;
+    background: @background-gradient;
+    padding: 0px 10px 0px 10px;
+
+    .logo {
+        font-family: Outfit;
+        font-weight: bold;
+        font-size: 36px;
+        a {
+            text-decoration: none;
+            color: @text-color;
+        }
+    }
+
+    .menu {
+        width: 900px;
+    }
+
+    ul {
+        .centering();
+        list-style: none;
+        font-family: Montserrat;
+        font-weight: bold;
+        padding: 0;
+        margin: 0;
+        
+        li a {
+            text-decoration: none;
+            color: @text-color;
+            font-size: 18px;
+        }
+    }
+
+    #user {
+        width: 100px;
+        .centering();
+    }
 }
