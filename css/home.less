@@ -1,4 +1,15 @@
-@import url(style.less);
+.centering {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@background-gradient: 
+    linear-gradient(105.7deg, #4776E6 0.3%, #8E54E9 76.59%);
+
+@text-color: #fff;
+@text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+@box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 @page-margin: 0px 30px 0px 30px;
 
 
@@ -23,8 +34,20 @@ h1 {
             background-color: #F8F8F8;
             width: 240px;
             height: 60px;
-            font: bold 28px 'Montserrat'!important;
+            font: bold 28px 'Montserrat';
+            cursor: pointer;
             color: #004DC1;
+            border: none;
+            border-radius: 10px;
+
+            &:hover {
+                filter: drop-shadow(0px 1px 5px rgb(0, 255, 21));
+                transition: ease 0.4s;
+            }
+
+            &:active {
+                transform: scale(0.98);
+            }
         }
     }   
 }
@@ -115,7 +138,7 @@ h1 {
                 color: #343434;
 
                 &:hover {
-                    color: #004DC1;
+                    color: #0066ff;
                 }
             }
         }
