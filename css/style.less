@@ -2,7 +2,7 @@ body {
     width: 99%;
     background: @background-gradient;
     margin: 0px 10px 0px 10px;
-    height: 3600px;
+    height: 3000px;
 }
 
 .centering {
@@ -66,16 +66,20 @@ header {
 
 footer {
     .centering();
-    padding: 0px 50px 0px 50px;
+    padding: 50px 50px 0px 50px;
     margin-top: 100px;
     border-top: #00FF29 solid;
     height: 35vh;
     color: #fff;
-    font: 22px 'Montserrat';
+    font: 550 22px 'Montserrat';
 
     a {
         color: #fff;
         text-decoration: none;
+
+        &:hover {
+            color: #00FF29;
+        }
     }
 
     #navigation {
@@ -86,9 +90,40 @@ footer {
         align-items: flex-start;
 
         #menu-block {
+            margin-top: 20px;
             .centering();
-            flex-direction: column;
+            font-size: 18px;
             align-items: flex-start;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            font-weight: lighter;
         }
+    }
+
+    #follow {
+        .centering();
+        flex-direction: column;
+        align-items: flex-start;
+        height: 100px;
+        
+        .links {
+            .centering();
+            width: 100%;
+
+            a:hover {
+                transform: translateY(-5px);
+                transition: ease-in-out 300ms;
+            }
+        }
+    }
+
+    #info {
+        .centering();
+        flex-direction: column;
+        font-size: 18px;
+        text-align: center;
+        width: 30%;
+        height: 30vh;
     }
 }

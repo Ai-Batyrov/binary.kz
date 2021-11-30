@@ -2,7 +2,7 @@ body {
   width: 99%;
   background: linear-gradient(105.7deg, #4776E6 0.3%, #8E54E9 76.59%);
   margin: 0px 10px 0px 10px;
-  height: 3600px;
+  height: 3000px;
 }
 .centering {
   display: flex;
@@ -58,16 +58,19 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 50px 0px 50px;
+  padding: 50px 50px 0px 50px;
   margin-top: 100px;
   border-top: #00FF29 solid;
   height: 35vh;
   color: #fff;
-  font: 22px 'Montserrat';
+  font: 550 22px 'Montserrat';
 }
 footer a {
   color: #fff;
   text-decoration: none;
+}
+footer a:hover {
+  color: #00FF29;
 }
 footer #navigation {
   display: flex;
@@ -79,9 +82,42 @@ footer #navigation {
   align-items: flex-start;
 }
 footer #navigation #menu-block {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  font-weight: lighter;
+}
+footer #follow {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
   align-items: flex-start;
+  height: 100px;
+}
+footer #follow .links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+footer #follow .links a:hover {
+  transform: translateY(-5px);
+  transition: ease-in-out 300ms;
+}
+footer #info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  font-size: 18px;
+  text-align: center;
+  width: 30%;
+  height: 30vh;
 }
