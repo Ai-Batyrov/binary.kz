@@ -23,12 +23,12 @@ body {
 @box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 header {
-    .centering();
+    .centering()!important;
     padding: 15px 0px 0px 10px;
     width: 98%;
 
     .menu {
-        width: 900px;
+        width: 1000px;
     }
 
     ul {
@@ -37,7 +37,14 @@ header {
         font-family: Montserrat;
         font-weight: bold;
         padding: 0;
-        margin: 0;
+        height: 40px;
+
+        li {
+            width: 200px;
+            .centering();
+            justify-content: center;
+            height: 100%;
+        }
         
         li a {
             text-decoration: none;
@@ -46,9 +53,19 @@ header {
             text-shadow: @text-shadow;
 
             &:hover {
-                color: #00FF29;
+                color: #00ff0d;
                 .hover-text-transition();
             }
+        }
+    }
+
+    .active {
+        background-color: #6e98fc;
+        border-radius: 10px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        a {
+            color: #ffffff;
         }
     }
 
@@ -78,17 +95,19 @@ header {
 }
 
 footer {
-    .centering();
+    .centering()!important;
     padding: 50px 50px 0px 50px;
     margin-top: 100px;
     border-top: #00FF29 solid;
     height: 35vh;
     color: #fff;
     font: 550 22px 'Montserrat';
+    text-shadow: @text-shadow;
 
     a {
-        color: #fff;
+        color: rgba(255, 255, 255, 0.842);
         text-decoration: none;
+        text-shadow: @text-shadow;
 
         &:hover {
             color: #00FF29;
@@ -111,7 +130,6 @@ footer {
             flex-direction: column;
             height: 100%;
             width: 100%;
-            font-weight: lighter;
         }
     }
 
@@ -128,6 +146,10 @@ footer {
             a:hover {
                 transform: translateY(-5px);
                 transition: ease 300ms;
+            }
+
+            img {
+                filter: drop-shadow(0px 1px 3px rgba(41, 41, 41, 0.5));
             }
         }
     }

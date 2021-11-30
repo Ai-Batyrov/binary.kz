@@ -40,6 +40,9 @@ h1 {
 #page-1 #left-side button:active {
   transform: scale(0.98);
 }
+#page-1 #left-side button:hover ~ .bg {
+  background: radial-gradient(circle 110px at var(--x) var(--y), rgba(169, 242, 136, 0.4), rgba(169, 242, 136, 0));
+}
 .main-page {
   display: flex;
   align-items: center;
