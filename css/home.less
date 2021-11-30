@@ -1,21 +1,23 @@
 @import url(style.less);
+@page-margin: 0px 30px 0px 30px;
+
+
+h1 {
+    font: bold 44px 'Montserrat';
+    text-align: center;
+    color: #00FF29;
+    text-shadow: @text-shadow;
+}
 
 #page-1 {
     .centering();
-    margin: 0px 30px 0px 30px;
+    margin: @page-margin;
     height: calc(100vh - 50px);
 
     #left-side {
         .centering();
         flex-direction: column;
         width: 700px;
-
-        h1 {
-            font: bold 44px 'Montserrat';
-            text-align: center;
-            color: #00FF29;
-            text-shadow: @text-shadow;
-        }
 
         button {
             background-color: #F8F8F8;
@@ -29,6 +31,41 @@
 
 
 #page-2 {
+    width: 98%;
+    height: 100vh;
+    
+    
+    .main-page {
+        .centering();
+        margin: @page-margin;
+    }
+
+    #description {
+        .centering();
+        flex-direction: column;
+        width: 50%;
+        font: 24px 'Montserrat';
+        color: @text-color;
+        text-align: justify;
+
+        div {
+            margin-bottom: 70px;
+            text-shadow: @text-shadow;
+        }
+    }
+
+    #icons-block {
+        .centering();
+        flex-direction: column;
+        width: 40%;
+
+        div {
+            .centering();
+            width: 70%;
+            margin-bottom: 70px;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));;
+        }
+    }
 
     img {
         color: transparent;
