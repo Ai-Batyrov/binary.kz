@@ -16,16 +16,6 @@ header {
   padding: 15px 0px 0px 10px;
   width: 98%;
 }
-header .logo {
-  font-family: Outfit;
-  font-weight: bold;
-  font-size: 36px;
-}
-header .logo a {
-  text-decoration: none;
-  color: #fff;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
 header .menu {
   width: 900px;
 }
@@ -53,4 +43,45 @@ header #user {
 }
 header #user img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.logo {
+  font-family: Outfit;
+  font-weight: bold;
+  font-size: 36px;
+}
+.logo a {
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px 0px 50px;
+  margin-top: 100px;
+  border-top: #00FF29 solid;
+  height: 35vh;
+  color: #fff;
+  font: 22px 'Montserrat';
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+footer #navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20vw;
+  height: 30vh;
+  flex-direction: column;
+  align-items: flex-start;
+}
+footer #navigation #menu-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
 }
