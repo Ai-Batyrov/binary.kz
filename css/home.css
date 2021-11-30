@@ -81,3 +81,7 @@ header #user img {
   font: bold 28px 'Montserrat' !important;
   color: #004DC1;
 }
+#page-2 img {
+  color: transparent;
+  width: 100px;
+}
