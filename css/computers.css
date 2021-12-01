@@ -1,0 +1,19 @@
+body {
+  background: #fff;
+  margin: 0;
+  width: 100%;
+}
+header {
+  background: #547AFF;
+  margin: 0;
+  width: 99%;
+}
+header .logo {
+  margin-left: 20px;
+}
+header #user {
+  margin-right: 20px;
+}
+footer {
+  background: #547AFF;
+}
