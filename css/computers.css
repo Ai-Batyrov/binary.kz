@@ -4,12 +4,25 @@
   justify-content: space-between;
 }
 .card-animation {
-  animation: fadeInAnimation ease 1s;
+  animation: fadeInAnimation ease 0.5s;
   animation-fill-mode: forwards;
 }
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fade-animation {
+  animation: fadeInAnimation ease 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
   }
   100% {
     opacity: 1;
@@ -43,9 +56,19 @@ body {
   font: bold 24px 'Montserrat';
 }
 header {
+  animation: fadeInAnimation ease 0.5s;
+  animation-fill-mode: forwards;
   background: #547AFF;
   margin: 0;
   width: 99%;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 header .logo {
   margin-left: 20px;
@@ -61,9 +84,30 @@ h1 {
   font-size: 33px;
   color: #547AFF;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  animation: fadeInAnimation ease 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+  }
 }
 h2 {
   font-size: 24px;
+  animation: fadeInAnimation ease 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 section {
   margin: 50px 30px 20px 30px;
@@ -75,7 +119,7 @@ section .cards {
   width: 100%;
 }
 section .cards .card {
-  animation: fadeInAnimation ease 1s;
+  animation: fadeInAnimation ease 0.5s;
   animation-fill-mode: forwards;
   display: flex;
   align-items: center;
@@ -136,11 +180,22 @@ section .cards .card .third button:active {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  animation: fadeInAnimation ease 0.5s;
+  animation-fill-mode: forwards;
   position: absolute;
   top: 125px;
   left: 1150px;
   width: 350px;
   font: 500 18px 'Montserrat';
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .currency-select select {
   font: 500 18px 'Montserrat';

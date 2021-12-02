@@ -40,7 +40,7 @@ function toEUR(value) {
 
     if (value.includes("$")) {
         value = value.replace("$", "");
-        convertedValue = value / 1,13;
+        convertedValue = Math.round(value / 1.13, 2);
     } else if (value.includes("₸")) {
         value = value.replace("₸", "");
         convertedValue = value / 500
@@ -55,7 +55,7 @@ function toUSD(value) {
 
     if (value.includes("€")) {
         value = value.replace("€", "");
-        convertedValue = value * 1,13;
+        convertedValue = Math.round(value * 1,13, 2);
     } else if (value.includes("₸")) {
         value = value.replace("₸", "");
         convertedValue = value / 430;

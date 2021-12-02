@@ -16,6 +16,21 @@ body {
     transition: ease 500ms;
 }
 
+.fade-animation {
+    animation: fadeInAnimation ease 1s;
+    animation-fill-mode: forwards;
+
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
 @background-gradient: 
     linear-gradient(105.7deg, #4776E6 0.3%, #8E54E9 76.59%);
 
@@ -26,6 +41,7 @@ body {
 // Styling
 header {
     .centering()!important;
+    .fade-animation();
     padding: 10px 0px 0px 10px;
     width: 98%;
 
