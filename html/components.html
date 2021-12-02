@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computers - BINARY.KZ</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/computers.css">
+    <link rel="stylesheet" href="../css/components.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html">BINARY.KZ</a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="/html/computers.html">Computers</a>
+                </li>
+                <li class="active">
+                    <a href="#">Components</a>
+                </li>
+                <li>
+                    <a href="">Accessories</a>
+                </li>
+                <li>
+                    <a href="">Delivery & Payment</a>
+                </li>
+                <li>
+                    <a href="">Wishes</a>
+                </li>
+            </ul>
+        </div>
+        <div id="user">
+            <a href="">
+                <img src="/img/header/146-basket-trolley-shopping-card-outline 1.svg" alt="" width="45px">
+            </a>
+            <a href="">
+                <img src="/img/header/21-avatar-outline 1.svg" alt="" width="45px">
+            </a>
+        </div>    
+    </header>
+
+    <h1>Components</h1>
+
+    <div class="currency-select">
+        Currency:
+        <select name="currency" id="currency">
+            <option value="USD">USD</option>
+            <option value="KZT">KZT</option>
+            <option value="EUR">EUR</option>
+        </select>
+        <button onclick="convertCurrency()">Convert</button>
+    </div>
+
+    <main>
+        <section>
+            <h2>CPU</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="first">
+                        <img src="/img/products/cpu/intel-core-i9.jpg" alt="">
+                        <div>Intel Core i9-11900K</div>
+                    </div>
+                    <div class="second">
+                        Socket: LGA1200 <br>
+                        Tech-process: 14 nm <br>
+                        Core: Rocket Lake-S <br>
+                        Frequency: 3.5 GHz <br>
+                        Number of cores:  8 <br>
+                        TDP: 125W <br>
+                        Threads: 16
+                    </div>
+                    <div class="third">
+                        <div class="price">$678</div>
+                        <div>
+                            <button onclick="toBasket()">
+                                To Basket
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="first">
+                        <img src="/img/products/cpu/intel-core-i7.jpg" alt="">
+                        <div>Intel Core i7-11700K</div>
+                    </div>
+                    <div class="second">
+                        Socket: LGA1200 <br>
+                        Tech-process: 14 nm <br>
+                        Core: Rocket Lake-S <br>
+                        Frequency: 3.6 GHz <br>
+                        Number of cores:  8 <br>
+                        TDP: 125W <br>
+                        Threads: 16
+                    </div>
+                    <div class="third">
+                        <div class="price">$427</div>
+                        <div>
+                            <button onclick="toBasket()">
+                                To Basket
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="first">
+                        <img src="/img/products/cpu/amd-ryzen-9.jfif" alt="">
+                        <div>AMD Ryzen 5900X</div>
+                    </div>
+                    <div class="second">
+                        Socket: AM4 <br>
+                        Tech-process: 7 nm <br>
+                        Core: Vermeer <br>
+                        Frequency: 3.7 GHz <br>
+                        Number of cores:  12 <br>
+                        TDP: 105W <br>
+                        Threads: 24
+                    </div>
+                    <div class="third">
+                        <div class="price">$700</div>
+                        <div>
+                            <button onclick="toBasket()">
+                                To Basket
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="first">
+                        <img src="/img/products/cpu/amd-ryzen-7.jfif" alt="">
+                        <div>AMD Ryzen 5800X</div>
+                    </div>
+                    <div class="second">
+                        Socket: AM4 <br>
+                        Tech-process: 7 nm <br>
+                        Core: Vermeer <br>
+                        Frequency: 3.8 GHz <br>
+                        Number of cores:  8 <br>
+                        TDP: 105W <br>
+                        Threads: 16
+                    </div>
+                    <div class="third">
+                        <div class="price">$477</div>
+                        <div>
+                            <button onclick="toBasket()">
+                                To Basket
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="spec-section">
+            <div class="in-section">
+                <h2>GPU</h2>
+                <div class="cards">
+                    <div class="card">
+                        <div class="first">
+                            <img src="/img/products/gpu/asus-rtx-3080.webp" alt="">
+                            <div>ASUS GeForce RTX 3080</div>
+                        </div>
+                        <div class="second">
+                            Video-memory: 10GB <br>
+                            Bandwidth: 19 Gbit/s <br>
+                            Microarchitecture: Ampere <br>
+                            Tech-process: 8nm <br>
+                            Frequency: 1440 MHz <br>
+                            Power: 320W
+                        </div>
+                        <div class="third">
+                            <div class="price">$2025</div>
+                            <div>
+                                <button onclick="toBasket()">
+                                    To Basket
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="first">
+                            <img src="/img/products/gpu/asus-radeon.webp" alt="">
+                            <div>ASUS Radeon RX 6700 XT</div>
+                        </div>
+                        <div class="second">
+                            Video-memory: 12GB <br>
+                            Bandwidth: 16 Gbit/s <br>
+                            Microarchitecture: RDNA 2 <br>
+                            Tech-process: 7nm <br>
+                            Frequency: 2321 MHz <br>
+                            Power: 230W
+                        </div>
+                        <div class="third">
+                            <div class="price">$1560</div>
+                            <div>
+                                <button onclick="toBasket()">
+                                    To Basket
+                                </button>
+                            </div>
+                        </div>
+                    </div>    
+
+                    
+                </div>
+            </div>
+            
+            <div class="in-section">
+                <h2>RAM</h2>
+                <div class="cards">
+                    <div class="card">
+                        <div class="first">
+                            <img src="/img/products/ram/amd-radeon-r5.webp" alt="">
+                            <div>AMD Radeon R5</div>
+                        </div>
+                        <div class="second">
+                            Memory: 16GB <br>
+                            Type: DDR4 <br>
+                            Frequency: 2400 MHz <br>
+                            Number of module chips: 8 <br>
+                            Voltage: 1.2V
+                        </div>
+                        <div class="third">
+                            <div class="price">$13</div>
+                            <div>
+                                <button onclick="toBasket()">
+                                    To Basket
+                                </button>
+                            </div>
+                        </div>
+                    </div>    
+
+                    <div class="card">
+                        <div class="first">
+                            <img src="/img/products/ram/amd-radeon-r7.webp" alt="">
+                            <div>AMD Radeon R7</div>
+                        </div>
+                        <div class="second">
+                            Memory: 16GB <br>
+                            Type: DDR4 <br>
+                            Frequency: 2400 MHz <br>
+                            Number of module chips: 8 <br>
+                            Voltage: 1.2V
+                        </div>
+                        <div class="third">
+                            <div class="price">$80</div>
+                            <div>
+                                <button onclick="toBasket()">
+                                    To Basket
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+    <footer>
+        <div class="logo">
+            <a href="">BINARY.KZ</a>
+        </div>
+
+        <div id="navigation">
+            Navigation
+            <div id="menu-block">
+                <a href="/html/computers.html">Computers</a>
+                <a href="#">Components</a>
+                <a href="/html/accessories.html">Accessories</a>
+                <a href="/html/delivery.html">Delivery and Payment</a>
+                <a href="/html/wishes.html">Wishes</a>
+            </div>
+        </div>
+        <div id="follow">
+            Follow author in socials
+            <div class="links">
+                <a href="https://www.facebook.com/aibolat.batyrov/">
+                    <img src="/img/social-icons/facebook.svg" alt="">
+                </a>
+                <a href="https://www.linkedin.com/in/aibolat-batyrov/">
+                    <img src="/img/social-icons/linkedin.svg" alt="">
+                </a>
+                <a href="https://github.com/Ai-Batyrov">
+                    <img src="/img/social-icons/github.svg" alt="">
+                </a>
+                <a href="https://www.instagram.com/ai.batyrov">
+                    <img src="/img/social-icons/instagram.svg" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div id="info">
+            <div>
+                This is a bonus project for <br> 
+                Web programming course
+            </div>
+            <div>
+                Author: <br>
+                Aibolat Batyrov
+            </div>
+            <div>
+                Suleyman Demirel University © 2021
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/header.js"></script>
+    <script src="js/main.js"></script>
+    <script src="/js/currency-select.js"></script>
+</body>
+</html>

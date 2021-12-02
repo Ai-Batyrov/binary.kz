@@ -1,0 +1,90 @@
+.centering {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-animation {
+  animation: fadeInAnimation ease 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.font {
+  font: 600 18px 'Montserrat' !important;
+}
+.button-styling {
+  width: 120px!important;
+  height: 30px;
+  background-color: #5F65FF;
+  color: #fff;
+  font: 600 18px 'Montserrat' !important;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.button-styling:hover {
+  transform: translateY(-3px);
+  transition: ease 0.4s;
+}
+.button-styling:active {
+  transform: scale(0.98);
+}
+section .in-section {
+  width: 47%;
+}
+section .card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font: 600 18px 'Montserrat' !important;
+  width: 300px!important;
+}
+section .card .first {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 10px!important;
+}
+section .card .first img {
+  width: 140px!important;
+}
+section .card .first div {
+  margin-left: 10px;
+}
+section .card .second {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+section .card button {
+  width: 120px!important;
+  height: 30px;
+  background-color: #5F65FF;
+  color: #fff;
+  font: 600 18px 'Montserrat' !important;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px!important;
+}
+section .card button:hover {
+  transform: translateY(-3px);
+  transition: ease 0.4s;
+}
+section .card button:active {
+  transform: scale(0.98);
+}
+#spec-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 96%;
+}

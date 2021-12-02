@@ -18,7 +18,7 @@
                     <a href="#">Computers</a>
                 </li>
                 <li>
-                    <a href="">Components</a>
+                    <a href="/html/components.html">Components</a>
                 </li>
                 <li>
                     <a href="">Accessories</a>
@@ -43,6 +43,16 @@
 
     <h1>Computers</h1>
 
+    <div class="currency-select">
+        Currency:
+        <select name="currency" id="currency">
+            <option value="USD">USD</option>
+            <option value="KZT">KZT</option>
+            <option value="EUR">EUR</option>
+        </select>
+        <button onclick="convertCurrency()">Convert</button>
+    </div>
+
     <section>
         <h2>Desktop PCs</h2>
         <div class="cards">
@@ -52,13 +62,145 @@
                     <div>Asus ROG Strix G16-I9</div>
                 </div>
                 <div class="second">
-                    CPU: Intel Core i9-11800K <br>
-                    GPU: NVIDIA GeForce RTX 3080 16Gb 1666Hz<br>
-                    RAM: Samsung Evo 16Gb x2<br>
-                    SSD: M2 NVMe 1TB - Samsung Evo 5<br>
-                    SSD: SATA III 2TB - Samsung Evo 3<br>
-                    Motherboard: Asus Rog 15x<br>
-                    Audio: Dolby Atmos<br>
+                    <strong>CPU:</strong> Intel Core i9-11800K <br>
+                    <strong>GPU:</strong> NVIDIA GeForce RTX 3080 16Gb 1666Hz<br>
+                    <strong>RAM:</strong> Samsung Evo 16Gb x2<br>
+                    <strong>SSD:</strong> M2 NVMe 1TB - Samsung Evo 5<br>
+                    <strong>SSD:</strong>SATA III 2TB - Samsung Evo 3<br>
+                    <strong>Motherboard:</strong> Asus Rog 15x<br>
+                    <strong>Audio:</strong> Dolby Atmos<br>
+                </div>
+                <div class="third">
+                    <div class="price">$1799</div>
+                    <div>
+                        <button onclick="toBasket()">
+                            To Basket
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="first">
+                    <img src="/img/products/computers/rog-core-i9.webp" alt="">
+                    <div>DELL Alienware
+                        X16-R5980HX</div>
+                </div>
+                <div class="second">
+                    <strong>CPU:</strong> AMD Ryzen 9 5980HX <br>
+                    <strong>GPU:</strong> NVIDIA GeForce RTX 3080 16Gb 1666Hz<br>
+                    <strong>RAM:</strong> HyperX Fury 8Gb x4<br>
+                    <strong>SSD:</strong> M2 NVMe 512Gb - WD Blue<br>
+                    <strong>SSD:</strong>SATA III 2TB - Samsung Evo 3<br>
+                    <strong>Motherboard:</strong> Dell Alienware X16<br>
+                    <strong>Audio:</strong> Dolby Atmos<br>
+                </div>
+                <div class="third">
+                    <div class="price">$1899</div>
+                    <div>
+                        <button onclick="toBasket()">
+                            To Basket
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="first">
+                    <img src="/img/products/computers/rog-core-i9.webp" alt="">
+                    <div>HP Omen 30L</div>
+                </div>
+                <div class="second">
+                    <strong>CPU:</strong> Intel Core i7-11700K <br>
+                    <strong>GPU:</strong> NVIDIA GeForce RTX 3060Ti 12Gb<br>
+                    <strong>RAM:</strong> HyperX DDR4-3200 16GB x2<br>
+                    <strong>SSD:</strong> M2 NVMe 512Gb WD Black<br>
+                    <strong>HDD:</strong> SATA III 2TB<br>
+                    <strong>Motherboard:</strong> HP OmenBoard 30L<br>
+                    <strong>Audio:</strong> DTS:X Ultra<br>
+                </div>
+                <div class="third">
+                    <div class="price">$1599</div>
+                    <div>
+                        <button onclick="toBasket()">
+                            To Basket
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Laptops</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="first">
+                    <img src="/img/products/computers/rog-g15.jpg" alt="">
+                    <div>Asus ROG Zephyrus G15</div>
+                </div>
+                <div class="second">
+                    <strong>CPU:</strong> AMD Ryzen 9 5900HS<br>
+                    <strong>GPU:</strong> NVIDIA GeForce RTX 3080 16Gb 1666Hz<br>
+                    <strong>RAM:</strong> AMD Ryzen RAM 32Gb<br>
+                    <strong>SSD:</strong> M2 NVMe 1TB - WD Black<br>
+                    <strong>Motherboard:</strong> Asus Rog mini-g15<br>
+                    <strong>Audio:</strong> Dolby Atmos<br>
+                </div>
+                <div class="third">
+                    <div class="price">$1499</div>
+                    <div>
+                        <button onclick="toBasket()">
+                            To Basket
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="first">
+                    <img src="/img/products/computers/dell-x15.png" alt="">
+                    <div>DELL Alienware
+                        X15-11800K</div>
+                </div>
+                <div class="second">
+                    <strong>CPU:</strong> Intel Core i9-11900K <br>
+                    <strong>GPU:</strong> NVIDIA GeForce RTX 3060Ti 6Gb<br>
+                    <strong>RAM:</strong> HyperX Fury 16Gb<br>
+                    <strong>SSD:</strong> M2 NVMe 1TB - WD Black<br>
+                    <strong>Motherboard:</strong> Dell Alienware X15-mini<br>
+                    <strong>Audio:</strong> Dolby Atmos<br>
+                </div>
+                <div class="third">
+                    <div class="price">$1699</div>
+                    <div>
+                        <button onclick="toBasket()">
+                            To Basket
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="first">
+                    <img src="/img/products/computers/hp-omen.webp" alt="">
+                    <div>HP Omen 15</div>
+                </div>
+                <div class="second">
+                    <strong>CPU:</strong> Intel Core i7-11700K <br>
+                    <strong>GPU:</strong> NVIDIA GeForce RTX 3060Ti 12Gb<br>
+                    <strong>RAM:</strong> Kingston X-series 32Gb<br>
+                    <strong>SSD:</strong> M2 NVMe 1TB HyperX Fury<br>
+                    <strong>Motherboard:</strong> HP OmenBoard 3125X<br>
+                    <strong>Audio:</strong> DTS:X Ultra<br>
+                </div>
+                <div class="third">
+                    <div class="price">$1799</div>
+                    <div>
+                        <button onclick="toBasket()">
+                            To Basket
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -72,8 +214,8 @@
         <div id="navigation">
             Navigation
             <div id="menu-block">
-                <a href="">Computers</a>
-                <a href="">Components</a>
+                <a href="#">Computers</a>
+                <a href="/html/components.html">Components</a>
                 <a href="">Accessories</a>
                 <a href="">Delivery and Payment</a>
                 <a href="">Wishes</a>
@@ -114,5 +256,6 @@
 
     <script src="js/header.js"></script>
     <script src="js/main.js"></script>
+    <script src="/js/currency-select.js"></script>
 </body>
 </html>

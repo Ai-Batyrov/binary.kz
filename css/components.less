@@ -1,0 +1,86 @@
+// useful mixins and variables
+.centering {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-animation {
+        animation: fadeInAnimation ease 1s;
+        animation-fill-mode: forwards;
+
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+}
+
+.font {
+    font: 600 18px 'Montserrat'!important;
+}
+
+.button-styling {
+    width: 120px!important;
+    height: 30px;
+    background-color: #5F65FF;
+    color: #fff;
+    .font();
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-3px);
+        transition: ease 0.4s;
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+}
+
+// styling
+section {
+
+    .in-section {
+       width: 47%;
+    }
+        .card {
+            .centering();
+            .font();
+            width: 300px!important;
+
+            .first {
+                .centering();
+                width: 90%;
+                margin: 10px!important;
+
+                img {
+                    width: 140px!important;
+                }
+
+                div {
+                    margin-left: 10px;
+                }
+            }
+
+            .second {
+                .centering();
+                width: 90%;
+            }
+
+            button {
+                .button-styling();
+                font-size: 14px!important;
+            }
+        }
+}
+
+#spec-section {
+    .centering();
+    width: 96%;
+}
