@@ -1,35 +1,10 @@
+.font {
+  font: 600 18px 'Montserrat' !important;
+}
 .centering {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.fade-animation {
-  animation: fadeInAnimation ease 1s;
-  animation-fill-mode: forwards;
-}
-@keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.card-animation {
-  animation: fadeInAnimation ease 1s;
-  animation-fill-mode: forwards;
-}
-@keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.font {
-  font: 600 18px 'Montserrat' !important;
 }
 .button-styling {
   width: 120px!important;
@@ -48,15 +23,12 @@
 .button-styling:active {
   transform: scale(0.98);
 }
-section .in-section {
-  width: 47%;
-}
 section .card {
   display: flex;
   align-items: center;
   justify-content: space-between;
   font: 600 18px 'Montserrat' !important;
-  width: 300px!important;
+  width: 330px!important;
 }
 section .card .first {
   display: flex;
@@ -76,7 +48,7 @@ section .card .second {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  width: 90%;
+  width: 98%;
   font-size: 16px!important;
 }
 section .card button {
@@ -96,10 +68,4 @@ section .card button:hover {
 }
 section .card button:active {
   transform: scale(0.98);
-}
-#spec-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 96%;
 }

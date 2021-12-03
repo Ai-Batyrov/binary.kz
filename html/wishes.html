@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishes - BINARY.KZ</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/computers.css">
+    <link rel="stylesheet" href="../css/wishes.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html">BINARY.KZ</a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="/html/computers.html">Computers</a>
+                </li>
+                <li>
+                    <a href="/html/components.html">Components</a>
+                </li>
+                <li>
+                    <a href="/html/accessories.html">Accessories</a>
+                </li>
+                <li>
+                    <a href="/html/delivery.html">Delivery & Payment</a>
+                </li>
+                <li class="active">
+                    <a href="/html/wishes.html">Wishes</a>
+                </li>
+            </ul>
+        </div>
+        <div id="user">
+            <a href="">
+                <img src="/img/header/146-basket-trolley-shopping-card-outline 1.svg" alt="" width="45px">
+            </a>
+            <a href="">
+                <img src="/img/header/21-avatar-outline 1.svg" alt="" width="45px">
+            </a>
+        </div>    
+    </header>
+
+    <h1>Wishes</h1>
+
+    <div class="currency-select">
+        Currency:
+        <select name="currency" id="currency">
+            <option value="USD">USD</option>
+            <option value="KZT">KZT</option>
+            <option value="EUR">EUR</option>
+        </select>
+        <button onclick="convertCurrency()">Convert</button>
+    </div>
+
+    <main>
+        <section>
+            <div class="cards">
+                <div class="card">
+                    <div class="first">
+                        <img src="/img/products/computers/rog-g15.jpg" alt="">
+                        <div>Asus ROG Zephyrus G15</div>
+                    </div>
+                    <div class="second">
+                        <strong>CPU:</strong> AMD Ryzen 9 5900HS<br>
+                        <strong>GPU:</strong> NVIDIA GeForce RTX 3080 16Gb 1666Hz<br>
+                        <strong>RAM:</strong> AMD Ryzen RAM 32Gb<br>
+                        <strong>SSD:</strong> M2 NVMe 1TB - WD Black<br>
+                        <strong>Motherboard:</strong> Asus Rog mini-g15<br>
+                        <strong>Audio:</strong> Dolby Atmos<br>
+                    </div>
+                    <div class="third">
+                        <div class="price">$1499</div>
+                        <div>
+                            <button onclick="toBasket()">
+                                To Basket
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="first">
+                        <img src="/img/products/computers/rog-core-i9.webp" alt="">
+                        <div>DELL Alienware
+                            X16-R5980HX</div>
+                    </div>
+                    <div class="second">
+                        <strong>CPU:</strong> AMD Ryzen 9 5980HX <br>
+                        <strong>GPU:</strong> NVIDIA GeForce RTX 3080 16Gb 1666Hz<br>
+                        <strong>RAM:</strong> HyperX Fury 8Gb x4<br>
+                        <strong>SSD:</strong> M2 NVMe 512Gb - WD Blue<br>
+                        <strong>SSD:</strong>SATA III 2TB - Samsung Evo 3<br>
+                        <strong>Motherboard:</strong> Dell Alienware X16<br>
+                        <strong>Audio:</strong> Dolby Atmos<br>
+                    </div>
+                    <div class="third">
+                        <div class="price">$1899</div>
+                        <div>
+                            <button onclick="toBasket()">
+                                To Basket
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="first">
+                        <img src="/img/products/cpu/amd-ryzen-9.jfif" alt="">
+                        <div>AMD Ryzen 5900X</div>
+                    </div>
+                    <div class="second">
+                        Socket: AM4 <br>
+                        Tech-process: 7 nm <br>
+                        Core: Vermeer <br>
+                        Frequency: 3.7 GHz <br>
+                        Number of cores:  12 <br>
+                        TDP: 105W <br>
+                        Threads: 24
+                    </div>
+                    <div class="third">
+                        <div class="price">$700</div>
+                        <div>
+                            <button onclick="toBasket()">
+                                To Basket
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="first">
+                        <img src="/img/products/cpu/amd-ryzen-7.jfif" alt="">
+                        <div>AMD Ryzen 5800X</div>
+                    </div>
+                    <div class="second">
+                        Socket: AM4 <br>
+                        Tech-process: 7 nm <br>
+                        Core: Vermeer <br>
+                        Frequency: 3.8 GHz <br>
+                        Number of cores:  8 <br>
+                        TDP: 105W <br>
+                        Threads: 16
+                    </div>
+                    <div class="third">
+                        <div class="price">$477</div>
+                        <div>
+                            <button onclick="toBasket()">
+                                To Basket
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+    <footer>
+        <div class="logo">
+            <a href="">BINARY.KZ</a>
+        </div>
+
+        <div id="navigation">
+            Navigation
+            <div id="menu-block">
+                <a href="/html/computers.html">Computers</a>
+                <a href="#">Components</a>
+                <a href="/html/accessories.html">Accessories</a>
+                <a href="/html/delivery.html">Delivery and Payment</a>
+                <a href="/html/wishes.html">Wishes</a>
+            </div>
+        </div>
+        <div id="follow">
+            Follow author in socials
+            <div class="links">
+                <a href="https://www.facebook.com/aibolat.batyrov/">
+                    <img src="/img/social-icons/facebook.svg" alt="">
+                </a>
+                <a href="https://www.linkedin.com/in/aibolat-batyrov/">
+                    <img src="/img/social-icons/linkedin.svg" alt="">
+                </a>
+                <a href="https://github.com/Ai-Batyrov">
+                    <img src="/img/social-icons/github.svg" alt="">
+                </a>
+                <a href="https://www.instagram.com/ai.batyrov">
+                    <img src="/img/social-icons/instagram.svg" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div id="info">
+            <div>
+                This is a bonus project for <br> 
+                Web programming course
+            </div>
+            <div>
+                Author: <br>
+                Aibolat Batyrov
+            </div>
+            <div>
+                Suleyman Demirel University © 2021
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/header.js"></script>
+    <script src="js/main.js"></script>
+    <script src="/js/currency-select.js"></script>
+</body>
+</html>

@@ -176,3 +176,37 @@ footer #info {
   width: 30%;
   height: 30vh;
 }
+@media screen and (max-width: 1024px) and (min-width: 420px) {
+  body {
+    width: 98vw;
+    margin: 0;
+    height: 2000px;
+  }
+  header {
+    width: 100%;
+  }
+  header .menu {
+    width: 700px;
+  }
+  header .menu ul {
+    margin: 0;
+    padding: 0;
+  }
+  header .menu ul li {
+    width: 180px;
+  }
+  header .menu ul li a {
+    font-size: 16px;
+  }
+  footer {
+    width: 90%;
+    height: 20vh;
+  }
+  footer .logo {
+    display: none;
+  }
+  footer #navigation,
+  footer #info {
+    height: 18vh;
+  }
+}
