@@ -22,6 +22,19 @@ h1 {
   color: #00FF29;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+header {
+  animation: fadeInAnimation ease 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
 #page-1 {
   display: flex;
   align-items: center;
@@ -190,85 +203,125 @@ h1 {
 #page-3 .card .button button:active {
   transform: scale(0.95);
 }
-@media screen and (max-width: 1024px) and (min-width: 420px) {
-  #page-3 {
-    margin: 50px;
-    width: 90%;
-    height: 70vh;
+@media only screen and (max-width: 993px) {
+  section {
+    width: 98vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
   }
-  #page-3 .main-page {
-    width: 100%;
-    height: 90vh;
+  h1 {
+    font-size: 28px;
+  }
+  #page-1 {
     margin: 0;
-  }
-  #page-3 .main-page .card {
-    width: 280px;
-    height: 40vh;
-    font-size: 20px;
-  }
-  #page-3 .main-page .card .first-part,
-  #page-3 .main-page .card .second-part,
-  #page-3 .main-page .card .button {
-    margin: 10px;
-  }
-  #page-3 .main-page .card .first-part {
-    margin-left: 10px;
-  }
-  #page-3 .main-page .card .first-part div {
-    font-size: 20px;
-  }
-  #page-3 .main-page .card .second-part a {
-    font-size: 20px;
-  }
-  #page-3 .main-page .card .button {
-    width: 94%;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     justify-content: center;
   }
-  #page-3 .main-page .card .button button {
-    margin: 30px;
+  #page-1 #left-side {
+    width: 100%;
+    margin: 0;
+  }
+  #page-1 #left-side button {
+    display: none;
+  }
+  #page-1 #splash {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+  }
+  #page-1 #splash img {
+    width: 300px;
+  }
+  #page-2 {
+    width: 100%;
+    height: 1000px;
+  }
+  #page-2 .main-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 900px;
+  }
+  #page-2 .main-page #description {
+    width: 90%;
+    height: 400px;
+  }
+  #page-2 .main-page #description div {
+    font-size: 18px;
+  }
+  #page-2 .main-page #icons-block {
+    width: 100%;
+    height: 50vh;
+  }
+  #page-2 .main-page #icons-block div {
+    width: 100%;
+  }
+  #page-3 {
+    margin: 0;
+    width: 100%;
+    height: 1600px;
+  }
+  #page-3 .main-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 1300px;
+  }
+  #page-3 .main-page .card {
+    width: 100%;
+    height: 50vh;
+  }
+  #page-3 .main-page .card div {
+    font-size: 20px;
+    margin: 10px;
+  }
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
   }
 }
-@media screen and (max-width: 411px) and (min-width: 375px) {
+@media only screen and (max-width: 1024px) {
+  #page-1 {
+    flex-direction: column;
+    height: auto;
+  }
+  #page-1 #left-side a button {
+    display: none;
+  }
+  #page-2 {
+    height: 1000px;
+  }
   #page-3 {
-    margin: 50px;
-    width: 90%;
-    height: 70vh;
+    margin: 10px;
+    width: 98%;
   }
   #page-3 .main-page {
-    width: 100%;
-    height: 90vh;
-    margin: 0;
+    height: 600px;
   }
   #page-3 .main-page .card {
-    width: 280px;
-    height: 40vh;
-    font-size: 20px;
-  }
-  #page-3 .main-page .card .first-part,
-  #page-3 .main-page .card .second-part,
-  #page-3 .main-page .card .button {
-    margin: 10px;
+    height: 100%;
   }
   #page-3 .main-page .card .first-part {
-    margin-left: 10px;
-  }
-  #page-3 .main-page .card .first-part div {
-    font-size: 20px;
-  }
-  #page-3 .main-page .card .second-part a {
-    font-size: 20px;
+    flex-direction: column;
   }
   #page-3 .main-page .card .button {
-    width: 94%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    justify-content: center;
+    margin: 0;
+    width: 100%;
   }
   #page-3 .main-page .card .button button {
-    margin: 30px;
+    margin: 0;
+    margin-bottom: 10px;
   }
 }

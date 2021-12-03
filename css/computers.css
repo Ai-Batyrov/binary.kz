@@ -56,19 +56,9 @@ body {
   font: bold 24px 'Montserrat';
 }
 header {
-  animation: fadeInAnimation ease 0.5s;
-  animation-fill-mode: forwards;
   background: #547AFF;
   margin: 0;
   width: 99%;
-}
-@keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 header .logo {
   margin-left: 20px;

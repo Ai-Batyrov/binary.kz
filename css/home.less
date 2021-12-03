@@ -36,6 +36,10 @@ h1 {
     text-shadow: @text-shadow;
 }
 
+header {
+    .fade-animation();
+}
+
 #page-1 {
     .centering();
     .fade-animation();
@@ -190,100 +194,142 @@ h1 {
 }
 
 // Adaptive and Responsive
-@media screen {
-    @media (max-width: 1024px) and (min-width: 420px) {
+@media only screen and (max-width: 993px){
+    section {
+        width: 98vw;
+        .centering();
+        flex-direction: column;
+        justify-content: center;
+    }
 
-        #page-3 {
-            margin: 50px;
-            width: 90%;
-            height: 70vh;
+    h1 {
+        font-size: 28px;
+    }
 
-            .main-page {
+    #page-1 {
+        margin: 0;
+        height: 500px;
+        .centering();
+        justify-content: center;
+
+        #left-side {
+            width: 100%;
+            margin: 0;
+
+            button {
+                display: none;
+            }
+        }
+
+        #splash {
+            width: 100%;
+            .centering();
+            justify-content: center;
+
+            img {
+                width: 300px;
+            }
+        }
+    }
+
+    #page-2 {
+        width: 100%;
+        height: 1000px;
+
+        .main-page {
+            .centering();
+            flex-direction: column;
+            height: 900px;
+
+            #description {
+                width: 90%;
+                height: 400px;
+
+                div {
+                    font-size: 18px;
+                }
+            }
+
+            #icons-block {
                 width: 100%;
-                height: 90vh;
-                margin: 0;
-
-                .card {
-                    width: 280px;
-                    height: 40vh;
-                    font-size: 20px;
-
-                    .first-part, .second-part, .button {
-                        margin: 10px;
-                    }
-
-                    .first-part {
-                        margin-left: 10px;
-
-                        div {
-                            font-size: 20px;
-                        }
-                    }
-
-                    .second-part {
-
-                        a {
-                            font-size: 20px;
-                        }
-                    }
-
-                    .button {
-                        width: 94%;
-                        .centering();
-                        justify-content: center;
-
-                        button {
-                            margin: 30px;
-                        }
-                    }
+                height: 50vh;
+                div {
+                    width: 100%;
                 }
             }
         }
     }
 
-    @media (max-width: 411px) and (min-width: 375px) {
-        #page-3 {
-            margin: 50px;
-            width: 90%;
-            height: 70vh;
+    #page-3 {
+        margin: 0;
+        width: 100%;
+        height: 1600px;
 
-            .main-page {
+        .main-page {
+            .centering();
+            flex-direction: column;
+            height: 1300px;
+
+            .card {
                 width: 100%;
-                height: 90vh;
-                margin: 0;
+                height: 50vh;
 
-                .card {
-                    width: 280px;
-                    height: 40vh;
+                div {
                     font-size: 20px;
+                    margin: 10px;
+                }
+            }
+        }
 
-                    .first-part, .second-part, .button {
-                        margin: 10px;
-                    }
+    }
 
-                    .first-part {
-                        margin-left: 10px;
+    footer {
+        .centering();
+        flex-direction: column;
+    }
+}
 
-                        div {
-                            font-size: 20px;
-                        }
-                    }
+@media only screen and (max-width: 1024px) {
 
-                    .second-part {
+    #page-1 {
+        flex-direction: column;
+        height: auto;
+        
+        #left-side {
 
-                        a {
-                            font-size: 20px;
-                        }
-                    }
+            a {
+                button {
+                    display: none;
+                }
+            }
+        }
+    }
 
-                    .button {
-                        width: 94%;
-                        .centering();
-                        justify-content: center;
+    #page-2 {
+        height: 1000px;
+    }
 
-                        button {
-                            margin: 30px;
-                        }
+    #page-3 {
+        margin: 10px;
+        width: 98%;
+
+        .main-page {
+            height: 600px;
+
+            .card {
+                height: 100%;
+
+                .first-part {
+                    flex-direction: column;
+                }
+
+                .button {
+                    margin: 0;
+                    width: 100%;
+
+                    button {
+                        margin: 0;
+                        margin-bottom: 10px;
                     }
                 }
             }

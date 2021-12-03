@@ -18,8 +18,7 @@ function convertCurrency() {
     }
 }
 
-
-
+// convert functions
 function toKZT(value) {
     let convertedValue;
 
@@ -34,7 +33,6 @@ function toKZT(value) {
     return convertedValue;
 }
 
-
 function toEUR(value) {
     let convertedValue;
 
@@ -48,7 +46,6 @@ function toEUR(value) {
 
     return convertedValue;
 }
-
 
 function toUSD(value) {
     let convertedValue;

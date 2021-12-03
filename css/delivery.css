@@ -37,6 +37,17 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  animation: fadeInAnimation ease 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+  }
 }
 section div {
   color: #343434;
