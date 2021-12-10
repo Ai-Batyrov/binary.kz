@@ -20,7 +20,7 @@ h1 {
   font: bold 44px 'Montserrat';
   text-align: center;
   color: #00FF29;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 4px 4px #000000;
 }
 header {
   animation: fadeInAnimation ease 1s;
@@ -41,7 +41,7 @@ header {
   justify-content: space-between;
   animation: fadeInAnimation ease 1s;
   animation-fill-mode: forwards;
-  margin: 0px 30px 0px 30px;
+  margin: 0 30px 0 30px;
   height: calc(100vh - 50px);
 }
 @keyframes fadeInAnimation {
@@ -84,8 +84,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0px 30px 0px 30px;
-  margin-top: 80px;
+  margin: 80px 30px 0;
 }
 #page-2 {
   width: 98%;
@@ -114,7 +113,7 @@ header {
   text-align: justify;
 }
 #page-2 #description div {
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 4px 4px #000000;
 }
 #page-2 #icons-block {
   display: flex;
@@ -136,19 +135,18 @@ header {
   width: 100px;
 }
 #page-3 {
-  margin: 0px 100px 0px 100px;
+  margin: 0 100px 0 100px;
   font: bold 20px 'Montserrat';
 }
 #page-3 .card {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   align-items: flex-start;
   width: 22vw;
   height: 75vh;
   flex-direction: column;
   background: #FCFCFC;
-  box-shadow: 4px 0px 4px #575757;
+  box-shadow: 4px 0 4px #575757;
   border-radius: 10px;
 }
 #page-3 .card div {
@@ -167,7 +165,6 @@ header {
 }
 #page-3 .card .second-part {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   flex-direction: column;
   align-items: flex-start;
@@ -183,11 +180,10 @@ header {
 #page-3 .card .button {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   justify-content: center;
 }
 #page-3 .card .button button {
-  margin: 0px 0px 30px 70px;
+  margin: 0 0 30px 70px;
   width: 150px;
   height: 40px;
   font: inherit;
@@ -208,7 +204,6 @@ header {
     width: 98vw;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     flex-direction: column;
     justify-content: center;
   }
@@ -220,7 +215,6 @@ header {
     height: 500px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     justify-content: center;
   }
   #page-1 #left-side {
@@ -234,7 +228,6 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     justify-content: center;
   }
   #page-1 #splash img {
@@ -321,7 +314,6 @@ header {
     width: 100%;
   }
   #page-3 .main-page .card .button button {
-    margin: 0;
-    margin-bottom: 10px;
+    margin: 0 0 10px;
   }
 }

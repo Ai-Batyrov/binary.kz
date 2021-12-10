@@ -1,17 +1,17 @@
 const selector = document.querySelector("select");
-var getPrice = document.querySelectorAll(".price");
+const getPrice = document.querySelectorAll(".price");
 
 function convertCurrency() {
     for (let i = 0; i < getPrice.length; i++) {
         let getPriceInnerHTML = getPrice[i].innerHTML;
 
-        if (selector.value == 'KZT') {
+        if (selector.value === 'KZT') {
             getPrice[i].innerHTML = "₸" +
                 toKZT(getPriceInnerHTML);
-        } else if (selector.value == 'EUR') {
+        } else if (selector.value === 'EUR') {
             getPrice[i].innerHTML = "€" +
                 toEUR(getPriceInnerHTML);
-        } else if (selector.value == 'USD') {
+        } else if (selector.value === 'USD') {
            getPrice[i].innerHTML = "$" +
                 toUSD(getPriceInnerHTML);
         }
